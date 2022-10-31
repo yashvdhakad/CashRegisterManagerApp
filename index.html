@@ -10,46 +10,46 @@
 </head>
 
 <body>
-        <main>
-            <section class="aboutApp">
-                <h1>Cash Register App</h1>
-                <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
-            </section>
-            <section class="userInputs">
-                <label for="bill-amount">Bill Amount</label>
-                <input type="text">
-                <label for="cash-given">Cash Given</label>
-                <input type="text">
-                <button>Calculate</button>
-            </section>
-            <section class="table">
-                <table>
-                    <tr>
-                        <th>Notes Given</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th>No. of Notes</th>
-                        <td>2000</td>
-                        <td>500</td>
-                        <td>100</td>
-                        <td>50</td>
-                        <td>20</td>
-                        <td>10</td>
-                        <td>5</td>
-                        <td>1</td>
-                    </tr>
-                </table>
-            </section>
-        </main>
+    <main>
+        <section class="aboutApp">
+            <h1>Cash Register App</h1>
+            <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+        </section>
+        <section class="inputs">
+            <label for="bill-amount">Bill Amount:</label>
+            <input id="bill-amount" type="text">
+            <label for="cash-given">Cash Given:</label>
+            <input id="cash-given" type="text">
+            <button id="check-button">Check</button>
+        </section>
+        <section class="outputs">
+            <p id="error-message"></p>
+            <table>
+                <tr>
+                    <th>No. of Notes Given</th>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
+                <tr>
+                    <th>Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </section>
+    </main>
 </body>
-<script src="app.js"></script>
-
+<script src="app.js" type="text/javascript"></script>
 </html>
