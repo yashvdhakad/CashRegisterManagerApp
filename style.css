@@ -5,7 +5,7 @@ body {
     padding: 0 25rem;
     text-align: center;
     font-family: 'Manrope', sans-serif;
-    background: linear-gradient(0deg, rgb(0, 217, 255) 0%, rgba(0,0,255,1) 100%);
+    background: linear-gradient(180deg, rgb(15, 177, 0) 0%, rgb(37, 0, 204) 100%);
     color: white;
 }
 
