@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 80px;
+}
+
+.aboutApp {
+    /* border: 1px solid black; */
+    padding: 24px;
+}
+
+.userInputs {
+    /* background: yellow; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+input {
+    margin-bottom: 24px;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
