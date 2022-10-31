@@ -1,28 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 body {
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    padding: 40px;
+    padding: 0 25rem;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    background: linear-gradient(0deg, rgb(0, 217, 255) 0%, rgba(0,0,255,1) 100%);
+    color: white;
 }
 
 .aboutApp {
-    /* border: 1px solid black; */
-    padding: 24px;
+    padding: 40px 0;
+}
+h1 {
+    font-size: 36px;
 }
 
 .inputs {
-    /* background: yellow; */
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    align-items: center;
+    /* padding: 40px; */
 }
 
 input {
     margin-bottom: 24px;
 }
 
+label {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+#bill-amount, #cash-given {
+    width: 20vw;
+    height: 5vh;
+    padding: .5rem;
+    font-size: 1.17rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    border-radius: .2rem;
+}
+
+#check-button {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    padding: 1rem 8rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    background: white;
+}
+#check-button:hover {
+    background: rgb(217, 217, 217);
+}
+
+.outputs {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
 table, tr, td, th {
-    border: 1px solid black;
+    border: 1px solid white;
     border-collapse: collapse;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+.no-of-notes {
+    font-weight: 600;
 }
