@@ -6,20 +6,6 @@ const noOfNotes = document.querySelectorAll(".no-of-notes");
 
 const availableNotes = [2000, 500, 100, 50, 20, 10, 5, 1];
 
-checkBtn.addEventListener("click", function billAmountAndCashGivenCheck() {
-  hideMessage();
-  if (billAmount.value > 0) {
-    if (cashGiven.value >= billAmount.value) {
-      const amountToBeReturned = cashGiven.value - billAmount.value;
-      calculateChange(amountToBeReturned);
-    } else {
-      showMessage("Do you wanna wash plates?");
-    }
-  } else {
-    showMessage("Invalid Bill Amount!");
-  }
-});
-
 function calculateChange(amountToBeReturned) {
   for (i = 0; i < availableNotes.length; i++) {
     const numberOfNotes = Math.trunc(amountToBeReturned / availableNotes[i]);
@@ -36,3 +22,16 @@ function showMessage(msg) {
   message.style.display = "block";
   message.innerText = msg;
 }
+checkBtn.addEventListener("click", function billAmountAndCashGivenCheck() {
+  hideMessage();
+  if (billAmount.value > 0) {
+    if (cashGiven.value >= billAmount.value) {
+      const amountToBeReturned = cashGiven.value - billAmount.value;
+      calculateChange(amountToBeReturned);
+    } else {
+      showMessage("Do you wanna wash plates?");
+    }
+  } else {
+    showMessage("Invalid Bill Amount!");
+  }
+});
